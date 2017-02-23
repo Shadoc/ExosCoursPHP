@@ -1,0 +1,209 @@
+/* Basic Elements */
+html, body {
+    font: 11px verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*table
+{
+    border-collapse: collapse;
+}*/
+/*td, th /* Mettre une bordure sur les td ET les th 
+{
+    border: 1px solid black;
+}
+*/
+
+#conteneurGlobal {
+    position: static;
+    z-index: 1;
+    width: 760px;
+    margin: 0 auto;
+}
+
+#enTete {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+    background: url("../Images/banniere_biblio.png") repeat-x 0% 0%;
+}
+
+#nomBandeau{
+    position: relative;
+    z-index: 1;
+    font: verdana, sans-serif;
+    font-size: 18px;
+    top: 41px; 
+}
+
+
+#conteneurCentral{
+    position: relative;
+    z-index: 1;
+}
+
+#contenuCentral{
+    position: relative;
+    z-index: 1;
+}
+
+#enConstruction{
+    float: left;
+    z-index: 2;
+}
+
+
+#Menu{
+    position: relative;
+    z-index: 2;
+    border: 1px solid #cecece;
+
+    /*text-align: center;*/
+}
+
+#menuDeroulant
+{
+    	position: relative;
+        z-index: 2;
+	background: #666;
+	width: 760px;
+	height: 21px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	top: 0;
+	left: 0;
+        
+}
+
+#menuDeroulant li
+{
+        position: relative;
+        z-index: 2;
+	float: left;
+	width: 126px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+#menuDeroulant li a:link, #menuDeroulant li a:visited
+{
+        position: relative;
+        z-index: 2;
+	display: block;
+	height: 1%;
+	color: #FFF;
+	background: #666;
+	margin: 0;
+	padding: 4px 8px;
+	border-right: 1px solid #fff;
+	text-decoration: none;
+}
+#menuDeroulant li a:hover { background-color: #F2462E; }
+#menuDeroulant li a:active { background-color: #5F879D; }
+
+#menuDeroulant .sousMenu
+{
+        position: relative;
+        z-index: 2;
+	display: none;
+	list-style-type: none;
+        background: #CCCCCC;
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+}
+#menuDeroulant .sousMenu li
+{
+        position: relative;
+        z-index: 2;
+	float: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 149px;
+	border-top: 1px solid transparent;
+	border-right: 1px solid transparent;
+}
+#menuDeroulant .sousMenu li a:link, #menuDeroulant .sousMenu li a:visited
+{
+        position: relative;
+        z-index: 2;
+	display: block;
+	color: #FFF;
+	margin: 0;
+	border: 0;
+	text-decoration: none;
+	/*background: transparent url("fondTR.png") repeat;*/
+
+}
+#menuDeroulant .sousMenu li a:hover
+{
+        position: relative;
+        z-index: 2;
+	background-image: none;
+	background-color: #F2462E;
+}
+
+#menuDeroulant li:hover > .sousMenu {
+        position: relative;
+        z-index: 2; 
+        display: block; 
+}
+
+
+#piedPage {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    clear: both;
+    border-top: 1px solid #cecece;
+    text-align: center;
+    padding: 5px 0;
+    color: #fff;
+    background: #666;
+}
+
+/* Additional styles */
+p {
+    padding: 10px;
+    margin: 0;
+}
+img {
+    border: 0;
+}
+h1 {
+    display: none;
+}
+a {
+    color: #84d5fa;
+    text-decoration: none;
+}
+a:hover {
+    color: orange;
+}
+
+
+
+#tableConnection{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: #666;
+
+    -moz-box-shadow: 0 0 5px 5px #888;
+    -webkit-box-shadow: 0 0 5px 5px#888;
+    box-shadow: 0 0 5px 5px #888;
+
+
+    padding: 20px;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
